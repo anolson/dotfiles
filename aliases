@@ -1,0 +1,11 @@
+# Stuff
+alias la='ls -a'
+alias ll='ls -al'
+
+# Bundler
+alias b="bundle"
+
+# Rails
+alias rk="rake"
+alias s="rspec"
+alias z="zeus"
