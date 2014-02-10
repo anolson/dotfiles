@@ -23,4 +23,4 @@ $ git clone git@github.com:anolson/dotfiles.git ~/.dotfiles
 $ rcup
 ```
 
-[http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos](Additional info on rcm.)
+[Additional info on rcm.](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
