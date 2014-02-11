@@ -1,10 +1,10 @@
 ## Dotfiles
 
-My dotfiles.
+My dotfiles. (heavily inspired by [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)).
 
-## Manage with `rcm`
+## Manage with rcm
 
-#### Install `rcm`
+#### Install rcm
 
 ```sh
 $ brew tap thoughtbot/formulae
@@ -24,7 +24,7 @@ $ rcup
 ```
 #### Additional `rcm` resources
 
-* [`rcm`](https://github.com/thoughtbot/rcm)
+* [rcm](https://github.com/thoughtbot/rcm)
 * [rcm, an rc file manager](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
 
 ## Git
