@@ -22,12 +22,14 @@ $ git clone git@github.com:anolson/dotfiles.git ~/.dotfiles
 ```sh
 $ rcup
 ```
+#### Additional `rcm` resources
 
-[Additional info on rcm.](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
+* [`rcm`](https://github.com/thoughtbot/rcm)
+* [rcm, an rc file manager](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
 
-## `gitconfig`
+## Git
 
-Glocal git config options are written to `~/.gitconfig`
+Glogal git config options are written to `~/.gitconfig`
 
 Add local config options to `~/.gitconfig.local`
 
