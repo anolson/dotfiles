@@ -10,7 +10,7 @@ done
 # completion
 zstyle ':completion:*' insert-tab false
 
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 _git_delete_branch() { _git_branch }
@@ -27,3 +27,5 @@ bindkey "^[[B" history-beginning-search-forward
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+# cd into the current working directory for new tabs
+precmd() { update_terminal_cwd }
