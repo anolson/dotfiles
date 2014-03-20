@@ -29,7 +29,7 @@ $ rcup
 
 ## Git
 
-Glogal git config options are written to `~/.gitconfig`
+Global git config options are written to `~/.gitconfig`
 
 Add local config options to `~/.gitconfig.local`
 
