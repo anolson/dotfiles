@@ -11,3 +11,6 @@
 
 [push]
   default = current
+
+[core]
+  editor = "mate -w"
