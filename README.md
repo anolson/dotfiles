@@ -1,6 +1,6 @@
 ## Dotfiles
 
-My dotfiles. (heavily inspired by [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)).
+My dotfiles. (inspired by [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)).
 
 ## Manage with rcm
 
