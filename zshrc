@@ -1,4 +1,5 @@
 path=(./bin /usr/local/bin /usr/local/sbin $path)
+export GOPATH=$HOME/Code/go
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
