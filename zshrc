@@ -30,3 +30,6 @@ bindkey "^[[B" history-beginning-search-forward
 
 # cd into the current working directory for new tabs
 precmd() { update_terminal_cwd }
+
+# add ssh key to the ssh-agent.
+ssh-add ~/.ssh/id_rsa &>/dev/null
