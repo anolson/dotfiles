@@ -33,3 +33,7 @@ precmd() { update_terminal_cwd }
 
 # add ssh key to the ssh-agent.
 ssh-add ~/.ssh/id_rsa &>/dev/null
+
+# autocomplete cd 
+setopt auto_cd
+cdpath=($HOME/Code $HOME/Code/go $HOME/Code/javascript $HOME/Code/rails $HOME/Code/ruby)
