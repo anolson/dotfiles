@@ -14,4 +14,4 @@
   default = current
 
 [core]
-  editor = "mate -w"
+  editor = "subl -n -w"

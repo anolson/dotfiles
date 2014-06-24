@@ -1,4 +1,5 @@
 path=(./bin /usr/local/bin /usr/local/sbin $path)
+export EDITOR="subl -w"
 export GOPATH=$HOME/Code/go
 
 # load our own completion functions
@@ -34,6 +35,6 @@ precmd() { update_terminal_cwd }
 # add ssh key to the ssh-agent.
 ssh-add ~/.ssh/id_rsa &>/dev/null
 
-# autocomplete cd 
+# autocomplete cd
 setopt auto_cd
 cdpath=($HOME/Code $HOME/Code/go $HOME/Code/javascript $HOME/Code/rails $HOME/Code/ruby)
