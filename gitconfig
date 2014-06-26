@@ -3,6 +3,7 @@
   squash-branch = !git checkout master && git merge --squash @{-1} && git commit
   merge-branch = !git checkout master && git merge @{-1}
   pp = !sh -c 'git pull && git push' -
+  up = !git fetch origin && git rebase origin/master
 
 [branch]
   autosetuprebase = always
