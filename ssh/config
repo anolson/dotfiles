@@ -14,6 +14,6 @@ Host bastion02
   Port 50101
   AddressFamily inet
 
-Host rake01 *.c46192 *.iad01 *.bbg *.blueboxgrid.com
+Host rake01 stageapp01 stageapp02 stageapp03 *.c46192 *.iad01 *.bbg *.blueboxgrid.com
   User deploy
   ProxyCommand ssh bastion01 -W %h:%p
