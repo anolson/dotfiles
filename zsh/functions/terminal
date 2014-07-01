@@ -8,3 +8,7 @@ update_terminal_cwd() {
   local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
   printf '\e]7;%s\a' "$PWD_URL"
 }
+
+update_terminal_title() {
+    print -Pn "\e]0;%1~\a"
+}
