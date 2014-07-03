@@ -11,5 +11,6 @@ alias b="bundle"
 
 # Rails
 alias rk="rake"
-alias s="rspec"
-alias z="zeus"
+
+# Sublime
+alias s="subl ."
