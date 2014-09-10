@@ -15,4 +15,4 @@
   default = current
 
 [core]
-  editor = "subl -n -w"
+  editor = "subl -w"
