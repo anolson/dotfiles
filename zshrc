@@ -4,12 +4,12 @@ path=(./bin /usr/local/bin /usr/local/sbin $path)
 git_prompt() {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   if [[ -n $ref ]]; then
-    echo " ${ref#refs/heads/}"
+    echo "${ref#refs/heads/}"
   fi
 }
 
 setopt promptsubst
-export PS1='%n@%m:%1~$(git_prompt)$ '
+export PS1='%n@%m:%1~ $(git_prompt)$ '
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
