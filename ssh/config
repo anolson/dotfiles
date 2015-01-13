@@ -1,19 +1,11 @@
 Host *
   SendEnv LANG LC_*
+
+Host bastion
+  Hostname 173.247.98.19
   ForwardAgent yes
-
-Host bastion01
-  Hostname foyer.trhou.se
   User anolson
-  Port 50100
-  AddressFamily inet
 
-Host bastion02
-  Hostname foyer.trhou.se
-  User anolson
-  Port 50101
-  AddressFamily inet
-
-Host rake01 stageapp01 stageapp02 stageapp03 *.c46192 *.iad01 *.bbg *.blueboxgrid.com
+Host rake01 stageapp01 stageapp02 stageapp03 10.84.0.* 10.240.36.* *.iad01.treehouse *.c46192 *.bbg *.blueboxgrid.com *.amazonaws.com
   User deploy
-  ProxyCommand ssh bastion01 -W %h:%p
+  ProxyCommand ssh bastion -W %h:%p
