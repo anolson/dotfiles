@@ -11,6 +11,9 @@
 [include]
   path = .gitconfig.local
 
+[commit]
+  template = ~/.gitmessage
+
 [push]
   default = current
 
