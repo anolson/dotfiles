@@ -14,3 +14,6 @@ alias rk="rake"
 
 # Sublime
 alias s="subl ."
+
+# Airport
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
