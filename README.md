@@ -22,6 +22,7 @@ $ git clone git@github.com:anolson/dotfiles.git ~/.dotfiles
 ```sh
 $ rcup
 ```
+
 #### Additional `rcm` resources
 
 * [rcm](https://github.com/thoughtbot/rcm)
@@ -51,3 +52,28 @@ Set repo specific config options
 ```sh
 $ git config user.email "anolson@gmail.com"
 ```
+
+## Sublime Text
+
+#### Packages
+
+* Alternative Autocompletion
+* Better CoffeeScript
+* Git
+* GoSublime
+* HTML Mustache
+* Markdown Preview
+* Package Control
+* Pretty JSON
+* Rails Partial
+* RubyTest
+* SideBarEnhancements
+* SublimeERB
+* Theme - Soda
+
+#### Install preferences
+
+```sh
+$ ./sublime/install.sh
+```
+
