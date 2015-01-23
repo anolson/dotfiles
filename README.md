@@ -31,7 +31,7 @@ $ rcup
 ## Fonts
 
 Install the [powerline patched](https://github.com/Lokaltog/powerline-fonts)
-fonts to get support for all characters in the prompt.
+fonts to get support for additional characters.
 
 ## Git
 
