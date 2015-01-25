@@ -67,13 +67,17 @@ $ git config user.email "anolson@gmail.com"
 * Pretty JSON
 * Rails Partial
 * RubyTest
+* SCSS
 * SideBarEnhancements
 * SublimeERB
 * Theme - Soda
+* Wrap Plus
 
 #### Install preferences
+
+First, install [Package Control](https://packagecontrol.io/installation).
 
 ```sh
 $ ./sublime/install.sh
 ```
-
+Package Control will install all the packages listed above.
