@@ -1,0 +1,28 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
+	"installed_packages":
+	[
+		"Alternative Autocompletion",
+		"Better CoffeeScript",
+		"Git",
+		"GoSublime",
+		"HTML Mustache",
+		"Markdown Preview",
+		"Package Control",
+		"Pretty JSON",
+		"Rails Partial",
+		"RubyTest",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeERB",
+		"Theme - Soda",
+		"Wrap Plus"
+	]
+}
