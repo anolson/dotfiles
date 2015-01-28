@@ -6,6 +6,6 @@ Host bastion
   ForwardAgent yes
   User anolson
 
-Host rake01 stageapp01 stageapp02 stageapp03 10.84.0.* 10.240.36.* *.iad01.treehouse *.c46192 *.bbg *.blueboxgrid.com *.amazonaws.com
+Host rake01.prod stageapp01 stageapp02 stageapp03 10.84.0.* 10.240.36.* *.iad01.treehouse *.c46192 *.bbg *.blueboxgrid.com *.amazonaws.com
   User deploy
   ProxyCommand ssh bastion -W %h:%p
