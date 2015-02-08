@@ -3,15 +3,20 @@ path=(./bin /usr/local/bin /usr/local/sbin $path)
 BRANCH="\ue0a0"
 
 # modify the prompt to contain git branch name if applicable
-git_prompt() {
+__git_prompt() {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   if [[ -n $ref ]]; then
-    echo " $BRANCH${ref#refs/heads/}"
+    echo "[%{$fg[green]%}${ref#refs/heads/}%{$terminfo[sgr0]%}]"
   fi
 }
 
 setopt promptsubst
-export PS1='%n@%m:%1~$(git_prompt)$ '
+autoload colors zsh/terminfo
+colors
+
+# export PS1='%m:%1~ %n$ '
+export PS1='%n@%m:%1~$ '
+export RPS1='$(__git_prompt)'
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
