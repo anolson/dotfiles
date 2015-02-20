@@ -1,5 +1,3 @@
-path=(./bin /usr/local/bin /usr/local/sbin $path)
-
 BRANCH="\ue0a0"
 
 # modify the prompt to contain git branch name if applicable
