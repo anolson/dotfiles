@@ -1,6 +1,7 @@
 export EDITOR="subl -w"
 export GOPATH=$HOME/Code/go
-export PATH=/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH
+export CODESHIP_PATH=$HOME/Code/docker/codeship-tool/downloads/darwin_amd64
+export PATH=/usr/local/bin:/usr/local/sbin:$GOPATH/bin:$PATH:$CODESHIP_PATH
 
 # load rbenv if available
 if which rbenv &>/dev/null ; then
