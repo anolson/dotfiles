@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -f Gemfile ]
+then
+  echo "Bundling..."
+  bundle install > /dev/null
+fi
+
+if [ -f db/schema.rb ]
+then
+  echo "Running Migrations..."
+  bin/rake db:migrate > /dev/null
+fi
