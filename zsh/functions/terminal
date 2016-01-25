@@ -12,3 +12,11 @@ update_terminal_cwd() {
 update_terminal_title() {
     print -Pn "\e]0;%1~\a"
 }
+
+precmd() {
+  # update the terminal title
+  update_terminal_title
+
+  # cd into the current working directory for new tabs
+  update_terminal_cwd
+}
