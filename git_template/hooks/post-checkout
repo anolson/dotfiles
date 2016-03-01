@@ -1,13 +1,20 @@
 #!/bin/sh
 
-if [ -f Gemfile ]
-then
-  echo "Bundling..."
-  bundle install > /dev/null
-fi
+previous=$1         # The ref of the previous HEAD
+current=$2          # The ref of the new HEAD (which may or may not have changed)
+branch_checkout=$3  # A flag indicating whether the checkout was a branch checkout
 
-if [ -f db/schema.rb ]
+if [ $branch_checkout -eq 1 ]
 then
-  echo "Running Migrations..."
-  bin/rake db:migrate > /dev/null
+  if [ -f Gemfile ]
+  then
+    echo "Bundling..."
+    bundle install > /dev/null
+  fi
+
+  if [ -f db/schema.rb ]
+  then
+    echo "Running Migrations..."
+    bin/rake db:migrate > /dev/null
+  fi
 fi
