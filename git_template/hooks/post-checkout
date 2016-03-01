@@ -5,17 +5,15 @@ current=$2          # The ref of the new HEAD (which may or may not have changed
 branch_checkout=$3  # A flag indicating whether the checkout was a branch checkout
 
 trigger_migrations() {
-  [ -f db/schema.rb ] && [ `git diff --diff-filter=A --name-only $previous db/migrate` ]
+  [ -f "db/schema.rb" ] && [ "$(git diff --diff-filter=A --name-only $previous db/migrate)" ]
 }
 
 trigger_bundler() {
-  [ -f Gemfile ] && [ `git diff --name-only $previous Gemfile` ]
+  [ -f Gemfile ] && [ "$(git diff --name-only $previous Gemfile)" ]
 }
 
 if [ $branch_checkout == 1 ]
 then
-  echo "Previous HEAD: " $previous
-
   if trigger_bundler
   then
     echo "Bundling..."
