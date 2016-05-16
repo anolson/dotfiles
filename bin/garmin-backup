@@ -1,0 +1,24 @@
+#!/bin/sh
+
+NOW=$(date +"%F")
+FILENAME="garmin-backup-$NOW.zip"
+GARMIN_VOLUME=/Volumes/GARMIN
+GARMIN_HISTORY=$GARMIN_VOLUME/Garmin/History/*.tcx
+
+if [ -d $GARMIN_VOLUME ]; then
+  echo "Compressing Garmin history..."
+  zip -j ~/tmp/$FILENAME $GARMIN_HISTORY
+
+  echo "Copying to Dropbox..."
+  cp ~/tmp/$FILENAME ~/Dropbox/Garmin
+
+  # remove tmp
+  # rm ~/tmp/$FILENAME
+
+  # remove history
+  # rm $GARMIN_HISTORY
+
+else
+  echo "Make sure your Garmin device is connected."
+fi
+
