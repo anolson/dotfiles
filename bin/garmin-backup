@@ -12,12 +12,13 @@ if [ -d $GARMIN_VOLUME ]; then
   echo "Copying to Dropbox..."
   cp ~/tmp/$FILENAME ~/Dropbox/Garmin
 
-  # remove tmp
-  # rm ~/tmp/$FILENAME
+  if [ -f ~/Dropbox/Garmin/$FILENAME ]; then
+    echo "Removing tmp file..."
+    rm ~/tmp/$FILENAME
 
-  # remove history
-  # rm $GARMIN_HISTORY
-
+    echo "Removing Garmin history..."
+    rm $GARMIN_HISTORY
+  fi
 else
   echo "Make sure your Garmin device is connected."
 fi
