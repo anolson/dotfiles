@@ -6,10 +6,19 @@ Host bastion
   ForwardAgent yes
   User anolson
 
-Host redis01.prod redis02.prod ws-docker01.prod ws-docker02.prod ws-docker03.prod
+Host redis*.prod ws-docker*.prod
   User tradmin
   ProxyCommand ssh bastion -W %h:%p
 
 Host 10.84.0.* 10.240.36.* *.prod *.stage *.dev *.iad01.treehouse *.c46192 *.bbg *.blueboxgrid.com *.amazonaws.com
   User deploy
   ProxyCommand ssh bastion -W %h:%p
+
+Host bastion-new
+  Hostname 169.45.222.20
+  ForwardAgent yes
+  User anolson
+
+Host 10.120.* *.wdc04 *.wdc04.treehouse
+  User anolson
+  ProxyCommand ssh bastion-new -W %h:%p
