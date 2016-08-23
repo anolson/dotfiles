@@ -20,5 +20,5 @@ Host bastion-new
   User anolson
 
 Host 10.120.* *.wdc04 *.wdc04.treehouse
-  User anolson
+  User deploy
   ProxyCommand ssh bastion-new -W %h:%p
