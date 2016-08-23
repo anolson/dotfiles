@@ -1,4 +1,9 @@
 {
+	"added_words":
+	[
+		"workflow",
+		"refactor"
+	],
 	"color_scheme": "Packages/Color Scheme - Default/Mac Classic.tmTheme",
 	"draw_indent_guides": false,
 	"ensure_newline_at_eof_on_save": true,
