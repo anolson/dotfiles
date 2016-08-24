@@ -10,15 +10,9 @@ Host redis*.prod ws-docker*.prod
   User tradmin
   ProxyCommand ssh bastion -W %h:%p
 
-Host 10.84.0.* 10.240.36.* *.prod *.stage *.dev *.iad01.treehouse *.c46192 *.bbg *.blueboxgrid.com *.amazonaws.com
+Host 10.120.* *.prod *.wdc04 *.wdc04.treehouse
   User deploy
   ProxyCommand ssh bastion -W %h:%p
 
-Host bastion-new
-  Hostname 169.45.222.20
-  ForwardAgent yes
-  User anolson
-
-Host 10.120.* *.wdc04 *.wdc04.treehouse
-  User deploy
-  ProxyCommand ssh bastion-new -W %h:%p
+Host rake1.prod
+  Hostname rake1.prod.wdc04.treehouse
