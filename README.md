@@ -28,11 +28,6 @@ $ rcup
 * [rcm](https://github.com/thoughtbot/rcm)
 * [rcm, an rc file manager](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
 
-## Fonts
-
-Install the [powerline patched](https://github.com/Lokaltog/powerline-fonts)
-fonts to get support for additional characters.
-
 ## Git
 
 Global git config options are written to `~/.gitconfig`
@@ -55,24 +50,6 @@ $ git config user.email "anolson@gmail.com"
 
 ## Sublime Text
 
-#### Packages
-
-* Alternative Autocompletion
-* Better CoffeeScript
-* Git
-* GoSublime
-* HTML Mustache
-* Markdown Preview
-* Package Control
-* Pretty JSON
-* Rails Partial
-* RubyTest
-* SCSS
-* SideBarEnhancements
-* SublimeERB
-* Theme - Soda
-* Wrap Plus
-
 #### Install preferences
 
 First, install [Package Control](https://packagecontrol.io/installation).
@@ -80,4 +57,4 @@ First, install [Package Control](https://packagecontrol.io/installation).
 ```sh
 $ ./sublime/install.sh
 ```
-Package Control will install all the packages listed above.
+Package Control will install all the configured packages.
