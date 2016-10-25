@@ -31,6 +31,8 @@
 		100
 	],
 	"scroll_past_end": false,
+	"show_definitions": false,
+	"show_errors_inline": false,
 	"tab_size": 2,
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
