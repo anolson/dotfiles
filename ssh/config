@@ -20,6 +20,18 @@ Host rake0.prod
 Host rake1.prod
   Hostname rake1.prod.wdc04.treehouse
 
+Host app0.prod
+  Hostname app0.prod.wdc04.treehouse
+
+Host app1.prod
+  Hostname app1.prod.wdc04.treehouse
+
+Host app2.prod
+  Hostname app2.prod.wdc04.treehouse
+
+Host app3.prod
+  Hostname app3.prod.wdc04.treehouse
+
 Host app0.dev
   Hostname app0.dev.wdc04.treehouse
 
