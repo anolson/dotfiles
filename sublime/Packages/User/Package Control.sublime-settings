@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Alternative Autocompletion",
+		"ANSIescape",
 		"Better CoffeeScript",
 		"Diffy",
 		"Git",
