@@ -5,9 +5,17 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
-for config in ~/.zsh/configs/*; do
-  . $config
-done
+_load_settings() {
+  _dir="$1"
+  if [ -d "$_dir" ]; then
+    for config in "$_dir"/*; do
+      . $config
+    done
+  fi
+}
+
+_load_settings "$HOME/.zsh/configs"
+_load_settings "$HOME/.zsh/configs/post"
 
 # completion
 zstyle ':completion:*' insert-tab false
