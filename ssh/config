@@ -14,23 +14,14 @@ Host 10.120.* *.prod *.dev *.wdc04 *.wdc04.treehouse
   User deploy
   ProxyCommand ssh bastion -W %h:%p
 
-Host rake0.prod
-  Hostname rake0.prod.wdc04.treehouse
+Host rake0.stage
+  Hostname rake0.stage.wdc04.treehouse
 
-Host rake1.prod
-  Hostname rake1.prod.wdc04.treehouse
+Host app0.stage
+  Hostname app0.stage.wdc04.treehouse
 
-Host app0.prod
-  Hostname app0.prod.wdc04.treehouse
-
-Host app1.prod
-  Hostname app1.prod.wdc04.treehouse
-
-Host app2.prod
-  Hostname app2.prod.wdc04.treehouse
-
-Host app3.prod
-  Hostname app3.prod.wdc04.treehouse
+Host app1.stage
+  Hostname app1.stage.wdc04.treehouse
 
 Host app0.dev
   Hostname app0.dev.wdc04.treehouse
@@ -55,3 +46,21 @@ Host app6.dev
 
 Host app7.dev
   Hostname app7.dev.wdc04.treehouse
+
+Host rake0.prod
+  Hostname rake0.prod.wdc04.treehouse
+
+Host rake1.prod
+  Hostname rake1.prod.wdc04.treehouse
+
+Host app0.prod
+  Hostname app0.prod.wdc04.treehouse
+
+Host app1.prod
+  Hostname app1.prod.wdc04.treehouse
+
+Host app2.prod
+  Hostname app2.prod.wdc04.treehouse
+
+Host app3.prod
+  Hostname app3.prod.wdc04.treehouse
