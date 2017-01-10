@@ -10,7 +10,7 @@ Host redis*.prod ws-docker*.prod
   User tradmin
   ProxyCommand ssh bastion -W %h:%p
 
-Host 10.120.* *.prod *.dev *.wdc04 *.wdc04.treehouse
+Host 10.120.* *.stage *.prod *.dev *.wdc04 *.wdc04.treehouse
   User deploy
   ProxyCommand ssh bastion -W %h:%p
 
