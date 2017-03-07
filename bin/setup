@@ -10,8 +10,8 @@ else
   echo "Homebrew located."
 fi
 
-
 echo "Updating Homebrew..."
 brew update
 brew bundle
 
+rcup
