@@ -7,6 +7,7 @@
 	[
 		"Alternative Autocompletion",
 		"ANSIescape",
+		"Babel",
 		"Better CoffeeScript",
 		"Diffy",
 		"Git",
@@ -18,6 +19,7 @@
 		"RubyTest",
 		"SCSS",
 		"SideBarEnhancements",
+		"sublime-github",
 		"SublimeERB",
 		"Table Cleaner",
 		"Theme - Soda",
