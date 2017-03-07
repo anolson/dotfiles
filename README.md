@@ -2,31 +2,12 @@
 
 My dotfiles. (inspired by [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)).
 
-## Manage with rcm
-
-#### Install rcm
-
-```sh
-$ brew tap thoughtbot/formulae
-$ brew install rcm
-```
-
-#### Clone the dotfiles repo
+## Setup
 
 ```sh
 $ git clone git@github.com:anolson/dotfiles.git ~/.dotfiles
+$ bin/setup
 ```
-
-#### Install dotfiles
-
-```sh
-$ rcup
-```
-
-#### Additional `rcm` resources
-
-* [rcm](https://github.com/thoughtbot/rcm)
-* [rcm, an rc file manager](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
 
 ## Git
 
@@ -50,11 +31,17 @@ $ git config user.email "anolson@gmail.com"
 
 ## Sublime Text
 
-#### Install preferences
+#### Install packages + prefs
 
 First, install [Package Control](https://packagecontrol.io/installation).
 
 ```sh
-$ ./sublime/install.sh
+$ ./sublime/setup
 ```
-Package Control will install all the configured packages.
+Sublime Text packages are are configured in [Package Control.sublime-settings](sublime/Packages/User/Package%20Control.sublime-settings). After `sublime/setup` runs, Package Control will detect the changes and automatically install all the packages.
+
+## Additional resources
+
+* [rcm](https://github.com/thoughtbot/rcm)
+* [rcm, an rc file manager](http://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos)
+
