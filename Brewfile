@@ -33,7 +33,9 @@ brew 'rbenv'
 brew 'redis', restart_service: true
 brew 'sassc'
 brew 'the_silver_searcher'
+brew 'tidy-html5'
 brew 'wget'
+brew 'yarn'
 brew 'zsh'
 
 brew 'homebrew/dupes/apple-gcc42'
