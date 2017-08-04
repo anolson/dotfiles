@@ -7,7 +7,7 @@
   merge-master = !git fetch origin && git merge origin/master
   pp = !git pull && git push
   up = !git fetch origin && git rebase origin/master
-  sup = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+  attach = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 [branch]
   autosetuprebase = always
 
