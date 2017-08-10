@@ -28,6 +28,7 @@ brew 'sqlite'
 brew 'postgresql'
 brew 'pow'
 brew 'rabbitmq', restart_service: true
+brew 'recode'
 brew 'ruby-build'
 brew 'rbenv'
 brew 'redis', restart_service: true
