@@ -6,6 +6,7 @@
 	],
 	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
 	"draw_indent_guides": false,
+	"el_capitan_sidebar_blue_folders": true,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -34,7 +35,7 @@
 	"show_definitions": false,
 	"show_errors_inline": false,
 	"tab_size": 2,
-	"theme": "Soda Light.sublime-theme",
+	"theme": "El Capitan.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
