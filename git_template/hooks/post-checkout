@@ -12,12 +12,23 @@ trigger_bundler() {
   [ -f Gemfile ] && [ "$(git diff --name-only $previous Gemfile)" ]
 }
 
+trigger_yarn() {
+  [ -f package.json ] && [ "$(git diff --name-only $previous package.json)" ]
+}
+
+
 if [ $branch_checkout == 1 ]
 then
   if trigger_bundler
   then
     echo "Bundling..."
     bundle install > /dev/null
+  fi
+
+  if trigger_yarn
+  then
+    echo "Installing yarn packages..."
+    yarn install > /dev/null
   fi
 
   if trigger_migrations
