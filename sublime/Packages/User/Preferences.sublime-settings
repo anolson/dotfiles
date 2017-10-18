@@ -33,6 +33,7 @@
 		100
 	],
 	"scroll_past_end": false,
+	"shell_environment": false,
 	"show_definitions": false,
 	"show_errors_inline": false,
 	"tab_size": 2,
@@ -40,6 +41,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true,
-	"shell_environment": false
+	"use_tab_stops": true
 }
