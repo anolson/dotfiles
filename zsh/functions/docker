@@ -1,0 +1,13 @@
+# Docker helpers
+
+function dexec() {
+  docker/exec treehouse "$@";
+}
+
+function drails() {
+  docker/exec treehouse "bin/rails $@";
+}
+
+function drspec() {
+  docker/exec treehouse "bin/rspec $@";
+}
