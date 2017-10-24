@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -f Dockerfile ]; then
+  docker/exec treehouse "bin/rspec $@"
+else
+  bin/rspec $@
+fi
