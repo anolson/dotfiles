@@ -16,7 +16,6 @@
 		"CVS",
 		"node_modules",
 		"tmp/cache",
-		"vendor/assets/bower_components"
 	],
 	"font_face": "Source Code Pro",
 	"font_size": 16,
