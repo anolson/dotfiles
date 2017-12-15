@@ -15,7 +15,7 @@
 		".hg",
 		"CVS",
 		"node_modules",
-		"tmp/cache",
+		"tmp/cache"
 	],
 	"font_face": "Source Code Pro",
 	"font_size": 16,
