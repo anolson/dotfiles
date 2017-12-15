@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+git branch -D $1
+git push origin :$1
+git remote prune origin

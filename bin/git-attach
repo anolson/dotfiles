@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+current=`git current-branch`
+git branch --set-upstream-to=origin/$current
