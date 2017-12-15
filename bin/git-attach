@@ -2,5 +2,5 @@
 
 set -e
 
-current=`git current-branch`
-git branch --set-upstream-to=origin/$current
+branch=`git current-branch`
+git branch --set-upstream-to=origin/$branch
