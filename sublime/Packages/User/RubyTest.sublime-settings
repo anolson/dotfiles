@@ -1,5 +1,5 @@
 {
   "save_on_run": true,
-  "run_rspec_command": "DISABLE_PRY=true docker-rspec-wrapper --no-color {relative_path}",
-  "run_single_rspec_command": "DISABLE_PRY=true docker-rspec-wrapper --no-color {relative_path}:{line_number}"
+  "run_rspec_command": "DISABLE_PRY=true docker-rspec-wrapper {relative_path}",
+  "run_single_rspec_command": "DISABLE_PRY=true docker-rspec-wrapper {relative_path}:{line_number}"
 }

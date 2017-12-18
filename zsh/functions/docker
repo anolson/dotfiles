@@ -9,5 +9,5 @@ function drails() {
 }
 
 function drspec() {
-  docker/exec treehouse "bin/rspec $@";
+  docker/exec treehouse "bin/rspec --no-color $@";
 }

@@ -1,7 +1,10 @@
 #!/bin/sh
 
-if [ -f Dockerfile ]; then
-  docker/exec treehouse "bin/rspec $@"
+echo "Running: $@"
+
+if [ $PWD = $TREEHOUSE_PATH ]; then
+  source ~/.zsh/functions/docker
+  drspec $@
 else
   bin/rspec $@
 fi
