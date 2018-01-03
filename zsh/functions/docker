@@ -5,7 +5,7 @@ function dexec() {
 }
 
 function drun() {
-  docker-compose run $@
+  docker-compose run --rm $@
 }
 
 function drt() {
