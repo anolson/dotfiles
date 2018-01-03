@@ -1,13 +1,25 @@
 # Docker helpers
 
 function dexec() {
-  docker/exec treehouse "$@";
+  docker-compose exec $@
+}
+
+function drun() {
+  docker-compose run $@
+}
+
+function drt() {
+  drun treehouse $@
+}
+
+function det() {
+  dexec treehouse $@
 }
 
 function drails() {
-  docker/exec treehouse "bin/rails $@";
+  det bin/rails $@
 }
 
 function drspec() {
-  docker/exec treehouse "bin/rspec --no-color $@";
+  det bin/rspec $@
 }
