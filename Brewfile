@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'caskroom/cask'
 tap 'homebrew/core'
 tap 'homebrew/dupes'
 tap 'homebrew/services'
@@ -33,3 +34,5 @@ cask 'google-chrome'
 cask 'docker'
 cask 'slack'
 cask 'zoomus'
+
+cask 'font-source-code-pro'
