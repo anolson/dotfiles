@@ -8,14 +8,6 @@ function drun() {
   docker-compose run --rm $@
 }
 
-function drt() {
-  drun treehouse $@
-}
-
-function det() {
-  dexec treehouse $@
-}
-
 function drails() {
   det bin/rails $@
 }
