@@ -13,6 +13,8 @@ fi
 
 echo "Updating Homebrew..."
 brew update
+
+echo "Installing Homebrew Packages..."
 brew bundle
 
 rcup
