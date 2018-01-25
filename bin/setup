@@ -6,12 +6,15 @@ if test ! $(which brew)
 then
   echo "Installing Homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew tap Homebrew/bundle
 else
   echo "Homebrew located."
 fi
 
 echo "Updating Homebrew..."
 brew update
+
+echo "Installing Homebrew Packages..."
 brew bundle
 
 rcup
