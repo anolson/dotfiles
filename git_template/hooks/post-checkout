@@ -16,30 +16,24 @@ trigger_yarn() {
   [ -f package.json ] && [ "$(git diff --name-only $previous package.json)" ]
 }
 
-
 if [ $branch_checkout == 1 ]
 then
-  if [ $PWD = $TREEHOUSE_PATH ]; then
-    source ~/.zsh/functions/docker
-    drt bin/update
-  else
-    if trigger_bundler
-    then
-      echo "Bundling..."
-      bundle install > /dev/null
-    fi
+  if trigger_bundler
+  then
+    echo "Bundling..."
+    bundle install > /dev/null
+  fi
 
-    if trigger_yarn
-    then
-      echo "Installing yarn packages..."
-      yarn install > /dev/null
-    fi
+  if trigger_yarn
+  then
+    echo "Installing yarn packages..."
+    yarn install > /dev/null
+  fi
 
-    if trigger_migrations
-    then
-      echo "Running Migrations..."
-      bin/rake db:migrate > /dev/null
-    fi
+  if trigger_migrations
+  then
+    echo "Running Migrations..."
+    bin/rake db:migrate > /dev/null
   fi
 fi
 
