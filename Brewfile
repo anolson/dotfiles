@@ -1,10 +1,9 @@
 tap 'caskroom/cask'
-tap 'caskroom/cask'
+tap 'caskroom/fonts'
 tap 'homebrew/core'
 tap 'homebrew/dupes'
 tap 'homebrew/services'
 tap 'homebrew/versions'
-tap 'puma/puma'
 tap 'thoughtbot/formulae'
 
 brew 'ffmpeg'
@@ -25,7 +24,6 @@ brew 'wget'
 brew 'yarn'
 brew 'zsh'
 
-brew 'puma/puma/puma-dev'
 brew 'thoughtbot/formulae/rcm'
 
 cask '1password'
