@@ -1,0 +1,13 @@
+[
+  { "keys": ["ctrl+shift+."], "command": "erb", "context":
+    [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee"
+      }
+    ]
+  },
+  { "keys": ["super+\\"], "command": "toggle_side_bar" },
+  { "keys": ["command+shift+j"], "command": "browser_refresh" }
+]
