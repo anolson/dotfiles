@@ -2,7 +2,7 @@
 
 echo "Running: $@"
 
-if [ $PWD = $TREEHOUSE_PATH ]; then
+if [ -f Dockerfile ]; then
   source ~/.zsh/functions/docker
   drspec --no-color $@
 else
