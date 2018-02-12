@@ -1,17 +1,41 @@
 # Docker helpers
 
+function dup() {
+  docker-compose up -d
+}
+
+function dstop() {
+  docker-compose stop
+}
+
 function dexec() {
-  docker-compose exec $@
+  docker exec $@
 }
 
 function drun() {
   docker-compose run --rm $@
 }
 
+function dsup() {
+  drun -d --name spring `current_service` spring server
+}
+
+function dsrm() {
+  docker stop spring && docker rm spring
+}
+
+function dss() {
+  docker exec spring spring status
+}
+
 function drails() {
-  det bin/rails $@
+  docker exec -it spring rails $@
 }
 
 function drspec() {
-  det bin/rspec $@
+  docker exec -e COVERAGE=no spring bin/rspec $@
+}
+
+function current_service() {
+  basename `pwd`
 }
