@@ -27,10 +27,11 @@ brew 'zsh'
 brew 'thoughtbot/formulae/rcm'
 
 cask '1password'
+cask 'docker'
 cask 'dropbox'
 cask 'google-chrome'
+cask 'ngrok'
 cask 'rowanj-gitx'
-cask 'docker'
 cask 'slack'
 cask 'zoomus'
 
