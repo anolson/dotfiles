@@ -9,31 +9,27 @@ function dstop() {
 }
 
 function dexec() {
-  docker exec $@
+  docker-compose exec `current_service` $@
 }
 
 function drun() {
-  docker-compose run --rm $@
+  docker-compose run --rm `current_service` $@
 }
 
-function dsup() {
-  drun -d --name spring `current_service` spring server
-}
-
-function dsrm() {
-  docker stop spring && docker rm spring
-}
-
-function dss() {
-  docker exec spring spring status
+function dtail() {
+  docker-compose logs -f $@
 }
 
 function drails() {
-  docker exec -it spring rails $@
+  dexec rails $@
+}
+
+function drc() {
+  dexec rails c
 }
 
 function drspec() {
-  docker exec -e COVERAGE=no spring bin/rspec $@
+  dexec env COVERAGE=no bin/rspec $@
 }
 
 function current_service() {
