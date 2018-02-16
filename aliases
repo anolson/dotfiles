@@ -5,6 +5,7 @@ alias ll='ls -al'
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
+alias dots="cd ~/.dotfiles"
 
 # Bundler
 alias b="bundle"
