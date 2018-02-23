@@ -8,6 +8,10 @@ function dstop() {
   docker-compose stop
 }
 
+function dps() {
+  docker-compose ps
+}
+
 function dexec() {
   docker-compose exec `current_service` $@
 }
@@ -30,6 +34,10 @@ function drc() {
 
 function drspec() {
   dexec env COVERAGE=no bin/rspec $@
+}
+
+function dtest() {
+  docker-compose run --rm test
 }
 
 function current_service() {
