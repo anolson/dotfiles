@@ -1,17 +1,45 @@
 # Docker helpers
 
+function dup() {
+  docker-compose up -d
+}
+
+function dstop() {
+  docker-compose stop
+}
+
+function dps() {
+  docker-compose ps
+}
+
 function dexec() {
-  docker-compose exec $@
+  docker-compose exec `current_service` $@
 }
 
 function drun() {
-  docker-compose run --rm $@
+  docker-compose run --rm `current_service` $@
+}
+
+function dtail() {
+  docker-compose logs -f $@
 }
 
 function drails() {
-  det bin/rails $@
+  dexec rails $@
+}
+
+function drc() {
+  dexec rails c
 }
 
 function drspec() {
-  det bin/rspec $@
+  dexec env COVERAGE=no bin/rspec $@
+}
+
+function dtest() {
+  docker-compose run --rm test
+}
+
+function current_service() {
+  basename `pwd`
 }
