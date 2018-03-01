@@ -6,6 +6,7 @@ tap 'homebrew/services'
 tap 'homebrew/versions'
 tap 'thoughtbot/formulae'
 
+brew 'dep'
 brew 'ffmpeg'
 brew 'gifsicle'
 brew 'git'
