@@ -1,0 +1,4 @@
+#!/bin/sh
+
+diskutil eject /Volumes/Backup
+diskutil eject /Volumes/Garmin
