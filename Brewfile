@@ -5,6 +5,7 @@ tap 'homebrew/dupes'
 tap 'homebrew/services'
 tap 'homebrew/versions'
 tap 'thoughtbot/formulae'
+tap 'puma/puma'
 
 brew 'dep'
 brew 'ffmpeg'
@@ -26,6 +27,7 @@ brew 'yarn'
 brew 'zsh'
 
 brew 'thoughtbot/formulae/rcm'
+brew 'puma/puma/puma-dev'
 
 cask '1password'
 cask 'docker'
