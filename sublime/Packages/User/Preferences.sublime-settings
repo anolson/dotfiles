@@ -24,6 +24,10 @@
 	[
 		"Vintage"
 	],
+	"index_ignored_patterns":
+	[
+		"*.tar.gz"
+	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"remember_open_files": false,
