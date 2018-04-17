@@ -1,3 +1,8 @@
 {
-  "fmt_cmd": [ "goimports" ]
+  "fmt_cmd": [ "goimports" ],
+  "lint_enabled": false,
+  "autoinst": false,
+  "9o_show_end": true,
+  "gscomplete_enabled": false,
+  "calltips": false,
 }
