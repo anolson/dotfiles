@@ -7,6 +7,10 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias dots="cd ~/.dotfiles"
 
+# Abstract
+alias abs="cd ~/Code/Go/src/github.com/goabstract"
+alias repos="cd ~/Library/Application Support/Abstract/repost"
+
 # Bundler
 alias b="bundle"
 
