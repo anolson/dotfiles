@@ -9,7 +9,7 @@ alias dots="cd ~/.dotfiles"
 
 # Abstract
 alias abs="cd ~/Code/Go/src/github.com/goabstract"
-alias repos="cd ~/Library/Application Support/Abstract/repost"
+alias repos="cd ~/Library/Application\ Support/Abstract/repos"
 
 # Bundler
 alias b="bundle"
