@@ -18,6 +18,12 @@ alias b="bundle"
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias rk="rake"
 
+# Go
+alias gb="go build ./..."
+alias gvb="go build -b ./..."
+alias gt="go test ./..."
+alias gvt="go test -v ./..."
+
 # Sublime
 alias s="subl ."
 
