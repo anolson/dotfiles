@@ -24,6 +24,4 @@ alias s="subl ."
 # Airport
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
-alias ack="ag"
-
 alias cp-branch="git current-branch | tr -d '\n' | pbcopy"
