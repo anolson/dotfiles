@@ -39,6 +39,7 @@
 	"shell_environment": false,
 	"show_definitions": false,
 	"show_errors_inline": false,
+	"show_panel_on_build": false,
 	"tab_size": 2,
 	"theme": "El Capitan.sublime-theme",
 	"translate_tabs_to_spaces": true,
