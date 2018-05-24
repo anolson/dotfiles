@@ -9,7 +9,7 @@
     ]
   },
   { "keys": ["super+\\"], "command": "toggle_side_bar" },
-  { "keys": ["command+shift+j"], "command": "browser_refresh" },
+  { "keys": ["super+shift+j"], "command": "browser_refresh" },
   { "keys": ["super+shift+period"],
     "command": "switch_between_code_and_test",
     "args": {"split_view": false},
@@ -20,5 +20,17 @@
           "operand": "source.ruby, source.rspec, text.gherkin.feature"
         }
       ]
+  },
+
+  {
+    "keys": ["super+shift+t"],
+    "command": "gs_test",
+    "context": [
+      {
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.go"
+      }
+    ]
   },
 ]
