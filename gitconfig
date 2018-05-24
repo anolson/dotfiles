@@ -13,4 +13,4 @@
 [core]
   editor = "subl -w"
 [rebase]
-	autosquash = true
+  autosquash = true
