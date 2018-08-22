@@ -21,6 +21,10 @@ Add local config options to `~/.gitconfig.local`
   email = anolson@gmail.com
 ```
 
+## Local `zsh` config
+
+Add local zsh config to `~/.zshrc.local`
+
 #### Repo specific config
 
 Set repo specific config options
