@@ -18,6 +18,10 @@
 		"tmp/cache"
 	],
 	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"gray_antialias"
+	],
 	"font_size": 16,
 	"hot_exit": false,
 	"ignored_packages":
