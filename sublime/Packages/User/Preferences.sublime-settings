@@ -2,7 +2,9 @@
 	"added_words":
 	[
 		"workflow",
-		"refactor"
+		"refactor",
+		"github",
+		"anolson"
 	],
 	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
 	"draw_indent_guides": false,
@@ -27,6 +29,11 @@
 	"ignored_packages":
 	[
 		"Vintage"
+	],
+	"ignored_words":
+	[
+		"rtc",
+		"util"
 	],
 	"index_ignored_patterns":
 	[
