@@ -6,6 +6,7 @@
 		"github",
 		"anolson"
 	],
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
 	"draw_indent_guides": false,
 	"el_capitan_sidebar_blue_folders": true,
