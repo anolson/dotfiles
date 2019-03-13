@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+func ${1:name}() {
+  ${2:}
+}
+]]></content>
+  <tabTrigger>func</tabTrigger>
+  <scope>source.go</scope>
+  <description>func(){}</description>
+</snippet>
