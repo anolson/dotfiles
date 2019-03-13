@@ -25,6 +25,8 @@
 		"SideBarTools",
 		"sublime-github",
 		"SublimeERB",
+		"SublimeLinter",
+		"SublimeLinter-contrib-gometalinter",
 		"Table Cleaner",
 		"Theme - El Capitan",
 		"Theme - Soda",
