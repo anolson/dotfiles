@@ -6,5 +6,6 @@
       "rubocop": {
           "args": ["--rails"]
       }
-  }
+  },
+  "delay": 1.0
 }
