@@ -1,7 +1,6 @@
 Host *
   IgnoreUnknown UseKeychain
   UseKeychain true
-  IdentityFile ~/.ssh/id_ed25519
   ControlPath ~/.ssh/controlmasters/%r@%h:%p
   ControlMaster auto
   ControlPersist 4h
