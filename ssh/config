@@ -4,6 +4,7 @@ Host *
   ControlPath ~/.ssh/controlmasters/%r@%h:%p
   ControlMaster auto
   ControlPersist 4h
+  User anolson
 
 Host github.com
   ControlPersist 2m
