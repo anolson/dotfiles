@@ -8,7 +8,7 @@ alias ...="cd ../.."
 alias dots="cd ~/.dotfiles"
 
 # Abstract
-alias abs="cd $GOPATH/src/github.com/goabstract"
+alias abs="cd ~/Library/Application\ Support/Abstract/repos"
 alias repos="cd ~/Library/Application\ Support/Abstract/repos"
 
 # Bundler
