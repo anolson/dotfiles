@@ -8,7 +8,7 @@ alias ...="cd ../.."
 alias dots="cd ~/.dotfiles"
 
 # Abstract
-alias abs="cd ~/Library/Application\ Support/Abstract/repos"
+alias abs="cd ~/Library/Application\ Support/Abstract"
 alias repos="cd ~/Library/Application\ Support/Abstract/repos"
 
 # Bundler
