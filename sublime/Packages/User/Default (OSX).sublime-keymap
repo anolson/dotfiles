@@ -8,6 +8,8 @@
       }
     ]
   },
+
+  { "keys": ["ctrl+shift+\\"], "command": "reveal_in_side_bar"},
   { "keys": ["super+\\"], "command": "toggle_side_bar" },
   { "keys": ["super+shift+j"], "command": "browser_refresh" },
   { "keys": ["super+shift+period"],
@@ -20,17 +22,5 @@
           "operand": "source.ruby, source.rspec, text.gherkin.feature"
         }
       ]
-  },
-
-  {
-    "keys": ["super+shift+t"],
-    "command": "gs_test",
-    "context": [
-      {
-        "key": "selector",
-        "operator": "equal",
-        "operand": "source.go"
-      }
-    ]
   },
 ]
