@@ -5,6 +5,9 @@
   "linters": {
       "rubocop": {
           "args": ["--rails"]
+      },
+      "golint": {
+        "excludes": "**/*_test.go"
       }
   },
   "delay": 1.0
