@@ -16,3 +16,5 @@
   editor = "subl -w"
 [rebase]
   autosquash = true
+[fetch]
+  prune = true
