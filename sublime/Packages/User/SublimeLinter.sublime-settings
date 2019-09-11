@@ -4,7 +4,7 @@
   "lint_mode": "save",
   "linters": {
       "rubocop": {
-          "args": ["--rails"]
+        "use_bundle_exec": true
       },
       "golint": {
         "excludes": "**/*_test.go"
