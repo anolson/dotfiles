@@ -25,14 +25,6 @@ Add local config options to `~/.gitconfig.local`
 
 Add local zsh config to `~/.zshrc.local`
 
-#### Repo specific config
-
-Set repo specific config options
-
-```sh
-$ git config user.email "anolson@gmail.com"
-```
-
 ## Sublime Text
 
 #### Install packages + prefs
