@@ -8,6 +8,7 @@ tap 'teamookla/speedtest'
 tap 'thoughtbot/formulae'
 
 brew 'ffmpeg'
+brew 'fish'
 brew 'gifsicle'
 brew 'git'
 brew 'go'
