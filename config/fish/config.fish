@@ -16,11 +16,6 @@ set -U fish_user_paths .git/safe/../../bin $fish_user_paths
 # Ruby
 status --is-interactive; and source (rbenv init -|psub)
 
-# Key bindings
-bind \t accept-autosuggestion
-bind -k up history-prefix-search-backward
-bind -k down history-prefix-search-forward
-
 # Aliases
 if test -f $HOME/.aliases
   source $HOME/.aliases
