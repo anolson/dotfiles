@@ -25,3 +25,6 @@ end
 if test -f $HOME/.config/fish/local.fish
   source $HOME/.config/fish/local.fish
 end
+
+complete -k -f -c git -n '__fish_git_using_command delete-branch' -a '(__fish_git_branches)'
+
