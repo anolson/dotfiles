@@ -1,6 +1,6 @@
 // SublimeLinter Settings - User
 {
-  "show_panel_on_save": "window",
+  "show_panel_on_save": "view",
   "lint_mode": "save",
   "linters": {
       "rubocop": {
