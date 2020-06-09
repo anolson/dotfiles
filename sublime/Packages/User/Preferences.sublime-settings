@@ -27,6 +27,10 @@
 		"gray_antialias"
 	],
 	"font_size": 16,
+	"gravity_bold_folder_labels": true,
+	"gravity_highlight_color_blue": false,
+	"gravity_tab_font_small": false,
+	"gravity_tab_height_short": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
@@ -54,7 +58,7 @@
 	"show_errors_inline": false,
 	"show_panel_on_build": false,
 	"tab_size": 2,
-	"theme": "El Capitan.sublime-theme",
+	"theme": "Reverse Gravity.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
