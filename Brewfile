@@ -1,4 +1,4 @@
-tab 'heroku/brew'
+tap 'heroku/brew'
 tap 'homebrew/cask-cask'
 tap 'caskroom/cask-fonts'
 tap 'homebrew/core'
