@@ -1,6 +1,6 @@
 tap 'heroku/brew'
-tap 'homebrew/cask-cask'
-tap 'caskroom/cask-fonts'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'puma/puma'
