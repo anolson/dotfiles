@@ -6,7 +6,6 @@ tap 'homebrew/services'
 tap 'puma/puma'
 tap 'thoughtbot/formulae'
 
-brew 'dep'
 brew 'ffmpeg'
 brew 'gifsicle'
 brew 'git'
