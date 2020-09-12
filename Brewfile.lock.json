@@ -5,7 +5,7 @@
         "revision": "6799ed0b4abcd57b9de2ca1a60305d2868d7c66c"
       },
       "homebrew/cask": {
-        "revision": "3832cf7f16526423656bf2805c3316d552999512"
+        "revision": "f9b54250b84bcad4b16ea151fc8a098adab1379e"
       },
       "homebrew/cask-fonts": {
         "revision": "c671b1bf35993102acdf2eadf8c0077811379bd2"
@@ -21,6 +21,9 @@
       },
       "thoughtbot/formulae": {
         "revision": "01340576ed7571ba34c9f1aa16626d6e20929de0"
+      },
+      "teamookla/speedtest": {
+        "revision": "b79ea77017ea57c98658225883d7ecc3d4410fbd"
       }
     },
     "brew": {
@@ -360,7 +363,11 @@
         }
       },
       "thoughtbot/formulae/rcm": null,
-      "puma/puma/puma-dev": null
+      "puma/puma/puma-dev": null,
+      "speedtest": {
+        "version": "1.0.0",
+        "bottle": false
+      }
     },
     "cask": {
       "1password": {
