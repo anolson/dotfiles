@@ -2,16 +2,16 @@
   "entries": {
     "tap": {
       "heroku/brew": {
-        "revision": "6799ed0b4abcd57b9de2ca1a60305d2868d7c66c"
+        "revision": "16e0cc260a2cff6727fdf3f0f2c1763737942374"
       },
       "homebrew/cask": {
-        "revision": "f9b54250b84bcad4b16ea151fc8a098adab1379e"
+        "revision": "03e334669b163707f17fe2720852a5284cf12246"
       },
       "homebrew/cask-fonts": {
-        "revision": "c671b1bf35993102acdf2eadf8c0077811379bd2"
+        "revision": "baad067bd10e6a06afbd4e84fe7e8079f4c9a2ec"
       },
       "homebrew/core": {
-        "revision": "8ec04410c472f75441a968883f7b1aae329bc2e8"
+        "revision": "a42414de06b5f47d8bec166211e34e289c8e9b79"
       },
       "homebrew/services": {
         "revision": "5ba553ecb4d4dad31eabd9535f262212d5098214"
@@ -120,28 +120,28 @@
         }
       },
       "go": {
-        "version": "1.15.1",
+        "version": "1.15.2",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/go-1.15.1.catalina.bottle.tar.gz",
-              "sha256": "e4186a216bf028261cbb193edb6df988bf804a75384dd2ac00eb2cc3f768dada"
+              "url": "https://homebrew.bintray.com/bottles/go-1.15.2.catalina.bottle.tar.gz",
+              "sha256": "dc31fb80b6f6d7d8db13db55d2994fc77d37ffeffcd56c755fbc2674a038227c"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/go-1.15.1.mojave.bottle.tar.gz",
-              "sha256": "3ec02ff078dcfab49bb1c05b30eac11962358ce66f9ac82d70ad43be10247c02"
+              "url": "https://homebrew.bintray.com/bottles/go-1.15.2.mojave.bottle.tar.gz",
+              "sha256": "a85ee24aaee867a45aff503a0f70da50310390374f1a2e9cf793834f9ca474e6"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/go-1.15.1.high_sierra.bottle.tar.gz",
-              "sha256": "651e5f5fcb413f5efcb70512954d086afc48a047ec70e23683f2b2fc64fb06c3"
+              "url": "https://homebrew.bintray.com/bottles/go-1.15.2.high_sierra.bottle.tar.gz",
+              "sha256": "abc48dd817025641accdcfac9c018db8f95d4bbeb347e4ca006a48d97f6ad82d"
             }
           }
         }
       },
       "heroku": {
-        "version": "7.42.13",
+        "version": "7.43.0",
         "bottle": false
       },
       "jq": {
@@ -429,9 +429,9 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.5.0",
+        "HOMEBREW_VERSION": "2.5.1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "8ec04410c472f75441a968883f7b1aae329bc2e8",
+        "Homebrew/homebrew-core": "a42414de06b5f47d8bec166211e34e289c8e9b79",
         "CLT": "11.5.0.0.1.1588476445",
         "Xcode": "11.5",
         "macOS": "10.15.6"
