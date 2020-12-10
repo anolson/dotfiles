@@ -36,6 +36,18 @@ $ ./sublime/setup
 ```
 Sublime Text packages are are configured in [Package Control.sublime-settings](sublime/Packages/User/Package%20Control.sublime-settings). After `sublime/setup` runs, Package Control will detect the changes and automatically install all the packages.
 
+## Misc
+
+#### Installing nvm
+
+Run the install script:
+https://github.com/nvm-sh/nvm#install--update-script
+
+```
+$ touch ~/.nvm
+$ source ~/.zshrc
+```
+
 ## Additional resources
 
 * [rcm](https://github.com/thoughtbot/rcm)
