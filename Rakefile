@@ -50,4 +50,11 @@ namespace :dotfiles do
   end
 end
 
+namespace :sublime do
+  desc "Setup Sublime Text preferences"
+  task setup: do
+    path = File.expand_path(".dotfiles/sublime/Packages/User")
+  end
+end
+
 
