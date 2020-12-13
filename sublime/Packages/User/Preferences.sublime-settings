@@ -10,7 +10,6 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
 	"draw_indent_guides": false,
-	"el_capitan_sidebar_blue_folders": true,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -56,7 +55,9 @@
 	"shell_environment": false,
 	"show_definitions": false,
 	"show_errors_inline": false,
+	"show_legacy_color_schemes": true,
 	"show_panel_on_build": false,
+	"show_tab_close_buttons_on_left": true,
 	"tab_size": 2,
 	"theme": "Reverse Gravity.sublime-theme",
 	"translate_tabs_to_spaces": true,
