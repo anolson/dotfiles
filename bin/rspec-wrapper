@@ -1,4 +1,10 @@
 #!/bin/sh
 
 echo "Running: $@"
-spring rspec $@
+
+if [ -f bin/spring ]
+then
+  spring rspec $@
+else
+  rspec $@
+fi
