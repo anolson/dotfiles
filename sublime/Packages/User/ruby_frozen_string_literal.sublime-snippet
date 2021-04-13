@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[# frozen_string_literal: true]]></content>
+  <tabTrigger>fro</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Ruby: frozen_string_literal</description>
+</snippet>
