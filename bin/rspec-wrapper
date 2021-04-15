@@ -4,7 +4,7 @@ echo "Running: $@"
 
 if [ -f bin/spring ]
 then
-  spring rspec $@
+  bin/spring rspec $@
 else
-  rspec $@
+  bin/rspec $@
 fi
