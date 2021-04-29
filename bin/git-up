@@ -2,5 +2,16 @@
 
 set -e
 
+default_branch=`git default-branch`
+
+if [ -z "$default_branch" ]; then
+  echo "You don't have a default branch reference set for your origin remote.
+
+Set the default branch with:
+$ git default-branch {default_branch}"
+
+  exit;
+fi
+
 git fetch origin
-git rebase origin/master
+git rebase "$default_branch" "$@"
