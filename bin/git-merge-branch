@@ -2,5 +2,5 @@
 
 set -e
 
-git checkout master
+git checkout main
 git merge @{-1}
