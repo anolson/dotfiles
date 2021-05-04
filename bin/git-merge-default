@@ -14,4 +14,4 @@ $ git default-branch {default_branch}"
 fi
 
 git fetch origin
-git rebase "$default_branch" "$@"
+git merge "$default_branch"
