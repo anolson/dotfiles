@@ -26,4 +26,8 @@ alias s="subl ."
 # Airport
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
+# Git
 alias cp-branch="git current-branch | tr -d '\n' | pbcopy"
+
+# Capybara
+alias last_screenshot="ls -1 tmp/capybara/*.png | tail -1 | xargs open"
