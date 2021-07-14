@@ -30,11 +30,11 @@ then
     yarn install > /dev/null
   fi
 
-  if trigger_migrations
-  then
-    echo "Running Migrations..."
-    bin/rake db:migrate > /dev/null
-  fi
+  # if trigger_migrations
+  # then
+  #   echo "Running Migrations..."
+  #   bin/rake db:migrate > /dev/null
+  # fi
 fi
 
 
