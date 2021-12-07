@@ -31,3 +31,9 @@ alias cp-branch="git current-branch | tr -d '\n' | pbcopy"
 
 # Capybara
 alias last_screenshot="ls -1 tmp/capybara/*.png | tail -1 | xargs open"
+
+# tmux
+alias tml="tmux list-sessions"
+alias tma="tmux -2 attach -t $1"
+alias tmk="tmux kill-session -t $1"
+alias mux="RBENV_VERSION=`rbenv global` tmuxinator"
