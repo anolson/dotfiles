@@ -3,5 +3,5 @@ root: ~/Code/rails/kajabi-products
 windows:
   - zsh:
   - console: bin/rails console
-  - logs: tail -f ~/Library/Logs/puma-dev.log
+  - server: bin/rails server
   - worker: heroku local worker_combined
