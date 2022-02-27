@@ -27,6 +27,7 @@ brew 'thoughtbot/formulae/rcm'
 brew 'wget'
 brew 'yarn'
 brew 'zsh'
+brew 'svn'
 
 cask '1password'
 cask 'dropbox'
