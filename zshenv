@@ -1,3 +1,6 @@
+# Setup Homebrew paths
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 export EDITOR="subl -w"
 export GOPATH=$HOME/Code/go
-export GOROOT=$(/usr/local/bin/go env GOROOT)
+export GOROOT=$(go env GOROOT)
