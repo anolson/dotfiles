@@ -11,6 +11,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# load rust if available
+[ -s "$HOME/.cargo/env" ]  && . "$HOME/.cargo/env"
+
 # add various other bin dirs
 PATH="$DOTBIN:$GOBIN:$LOCAlSBIN:$PATH"
 
