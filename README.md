@@ -48,6 +48,11 @@ $ touch ~/.nvm
 $ source ~/.zshrc
 ```
 
+#### Terminal.app keyboard config
+
+* Home -> `\001`
+* End -> `\005`
+
 ## Additional resources
 
 * [rcm](https://github.com/thoughtbot/rcm)
