@@ -37,3 +37,8 @@ alias tml="tmux list-sessions"
 alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
 alias mux="RBENV_VERSION=`rbenv global` tmuxinator"
+
+# Switch architecture
+alias arm="$env /usr/bin/arch -arm64 /bin/zsh --login"
+alias intel="$env /usr/bin/arch -x86_64 /bin/zsh --login"
+
