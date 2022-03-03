@@ -1,7 +1,0 @@
-name: kajabi
-root: ~/Code/rails/kajabi-products
-windows:
-  - zsh:
-  - console: bin/rails console
-  - server: bin/rails server
-  - worker: heroku local worker_combined
