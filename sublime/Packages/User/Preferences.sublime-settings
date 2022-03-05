@@ -8,7 +8,7 @@
 		"Terraform"
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Legacy/Mac Classic.tmTheme",
+	"color_scheme": "Packages/GitHub Theme/schemes/GitHub Light.sublime-color-scheme",
 	"draw_indent_guides": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
@@ -28,6 +28,7 @@
 	"font_size": 16,
 	"gravity_bold_folder_labels": true,
 	"gravity_highlight_color_blue": false,
+	"gravity_selected_tab_bold": false,
 	"gravity_tab_font_small": false,
 	"gravity_tab_height_short": true,
 	"hot_exit": false,
