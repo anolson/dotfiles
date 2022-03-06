@@ -2,9 +2,12 @@
 
 echo "Running: $@"
 
-if [ -f bin/spring ]
-then
+if [ -f bin/spring ]; then
   bin/spring rspec $@
 else
-  bin/rspec $@
+  if [ -f bin/rspec ]; then
+    bin/rspec $@
+  else
+    rspec $@
+  fi
 fi
