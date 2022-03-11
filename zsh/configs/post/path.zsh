@@ -12,7 +12,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # load rust if available
-[ -s "$HOME/.cargo/env" ]  && . "$HOME/.cargo/env"
+[ -s "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+# Setup PATH for the Google Cloud SDK.
+[[ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]] && . "$HOME/google-cloud-sdk/path.zsh.inc"
 
 # add various other bin dirs
 PATH="$DOTBIN:$GOBIN:$LOCAlSBIN:$PATH"

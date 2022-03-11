@@ -23,6 +23,9 @@ zstyle ':completion:*' insert-tab false
 autoload -Uz compinit
 compinit
 
+# Setup shell command completion for gcloud.
+[[ -f ~/google-cloud-sdk/completion.zsh.inc ]] && . ~/google-cloud-sdk/completion.zsh.inc
+
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
