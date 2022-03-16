@@ -1,6 +1,6 @@
 DOTBIN="$HOME/.bin"
 GOBIN="$GOPATH/bin"
-LOCALSBIN="/usr/local/sbin"
+CRTHOME="$HOME/.crt"
 
 # load rbenv if available
 if which rbenv &>/dev/null ; then
@@ -18,7 +18,7 @@ export NVM_DIR="$HOME/.nvm"
 [[ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]] && . "$HOME/google-cloud-sdk/path.zsh.inc"
 
 # add various other bin dirs
-PATH="$DOTBIN:$GOBIN:$LOCAlSBIN:$PATH"
+PATH="$DOTBIN:$GOBIN:$CRTHOME:$PATH"
 
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
