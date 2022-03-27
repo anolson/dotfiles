@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exec < /dev/tty
+
 previous=$1         # The ref of the previous HEAD
 current=$2          # The ref of the new HEAD (which may or may not have changed)
 branch_checkout=$3  # A flag indicating whether the checkout was a branch checkout
@@ -16,25 +18,41 @@ trigger_yarn() {
   [ -f package.json ] && [ "$(git diff --name-only $previous package.json)" ]
 }
 
-if [ $branch_checkout == 1 ]
-then
+confirm_updates() {
+  read -p "Run post-checkout updates (y/N)?"
+  [[ $REPLY =~ ^[Yy]$ ]] && return
+  exit 0
+}
+
+run_updates() {
   if trigger_bundler
   then
-    echo "Bundling..."
+    echo "💎 Bundling..."
     bundle install > /dev/null
   fi
 
   if trigger_yarn
   then
-    echo "Installing yarn packages..."
+    echo "📦 Installing yarn packages..."
     yarn install > /dev/null
   fi
 
-  # if trigger_migrations
-  # then
-  #   echo "Running Migrations..."
-  #   bin/rake db:migrate > /dev/null
-  # fi
+  if trigger_migrations
+  then
+    echo "⚡️ Running Migrations..."
+    bin/rake db:migrate > /dev/null
+  fi
+
+  echo "✨Done!"
+}
+
+if [ $branch_checkout == 1 ]
+then
+  confirm_updates
+
+  if [ -f "./bin/update" ]; then
+    ./bin/update
+  else
+    run_updates
+  fi
 fi
-
-
