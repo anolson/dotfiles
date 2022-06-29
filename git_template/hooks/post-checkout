@@ -48,4 +48,5 @@ summarize_updates() {
 if [ $branch_checkout == 1 ]
 then
   summarize_updates
+  exit 1
 fi
