@@ -13,10 +13,11 @@ alias b="bundle"
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias rk="rake"
+alias rup="bundle install && yarn install && bin/rake db:migrate db:test:prepare"
 
 # Go
 alias gb="go build ./..."
-alias gvb="go build -b ./..."
+alias gvb="go build -v ./..."
 alias gt="go test ./..."
 alias gvt="go test -v ./..."
 
