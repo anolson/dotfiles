@@ -19,34 +19,15 @@ trigger_yarn() {
 }
 
 summarize_updates() {
-  if !trigger_bundler && !trigger_migrations && !trigger_yarn
-  then
-    echo "no updates"
-    return
+  if [[ trigger_bundler || trigger_migrations || trigger_yarn ]]; then
+    echo "There are some important updates in the branch you just switched to:"
+    echo ""
+    echo " ⚡ Be sure to run rup or bin/update"
+    echo ""
   fi
-
-  echo "Here's a summary of the changes you just pulled..."
-
-  if trigger_bundler
-  then
-    echo "💎 Bundler"
-  fi
-
-  if trigger_yarn
-  then
-    echo "📦 NPM packages..."
-  fi
-
-  if trigger_migrations
-  then
-    echo "⚡️ DB Migrations..."
-  fi
-
-  echo "✨ Be sure to run rup or bin/update"
 }
 
 if [ $branch_checkout == 1 ]
 then
   summarize_updates
-  exit 1
 fi
