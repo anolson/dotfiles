@@ -1,58 +1,33 @@
 #!/bin/sh
 
-exec < /dev/tty
-
 previous=$1         # The ref of the previous HEAD
 current=$2          # The ref of the new HEAD (which may or may not have changed)
 branch_checkout=$3  # A flag indicating whether the checkout was a branch checkout
+
+echo "post checkout $previous"
+
+trigger_bundler() {
+  [ -f Gemfile ] && [ "$(git diff --name-only $previous Gemfile Gemfile.lock)" ]
+}
 
 trigger_migrations() {
   [ -f "db/schema.rb" ] && [ "$(git diff --diff-filter=A --name-only $previous db/migrate)" ]
 }
 
-trigger_bundler() {
-  [ -f Gemfile ] && [ "$(git diff --name-only $previous Gemfile)" ]
-}
-
 trigger_yarn() {
-  [ -f package.json ] && [ "$(git diff --name-only $previous package.json)" ]
+  [ -f package.json ] && [ "$(git diff --name-only $previous package.json yarn.lock)" ]
 }
 
-confirm_updates() {
-  read -p "Run post-checkout updates (y/N)?"
-  [[ $REPLY =~ ^[Yy]$ ]] && return
-  exit 0
-}
-
-run_updates() {
-  if trigger_bundler
-  then
-    echo "💎 Bundling..."
-    bundle install > /dev/null
+summarize_updates() {
+  if [[ trigger_bundler || trigger_migrations || trigger_yarn ]]; then
+    echo "There are some important updates in the branch you just switched to:"
+    echo ""
+    echo " ⚡ Be sure to run rup or bin/update"
+    echo ""
   fi
-
-  if trigger_yarn
-  then
-    echo "📦 Installing yarn packages..."
-    yarn install > /dev/null
-  fi
-
-  if trigger_migrations
-  then
-    echo "⚡️ Running Migrations..."
-    bin/rake db:migrate > /dev/null
-  fi
-
-  echo "✨Done!"
 }
 
 if [ $branch_checkout == 1 ]
 then
-  confirm_updates
-
-  if [ -f "./bin/update" ]; then
-    ./bin/update
-  else
-    run_updates
-  fi
+  summarize_updates
 fi
