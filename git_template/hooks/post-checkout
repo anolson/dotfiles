@@ -9,7 +9,7 @@ trigger_bundler() {
 }
 
 trigger_migrations() {
-  [ -f "db/schema.rb" ] && [ "$(git diff --diff-filter=A --name-only $previous -- db/migrate)" ]
+  [ -f "db/schema.rb" ] && [ "$(git diff --diff-filter=A --name-only $previous -- db/migrate db/versions)" ]
 }
 
 trigger_yarn() {
@@ -18,9 +18,8 @@ trigger_yarn() {
 
 summarize_updates() {
   if trigger_bundler || trigger_migrations || trigger_yarn ; then
-    echo "There are some important updates in the branch you just switched to:"
     echo ""
-    echo " ⚡ Be sure to run rup or bin/update"
+    echo "→ Don't forget to run rup or bin/update"
     echo ""
   fi
 }
