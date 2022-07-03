@@ -1,0 +1,20 @@
+#!/bin/sh
+
+echo ""
+echo "💎 Bundling..."
+echo ""
+bundle install
+
+echo ""
+echo "📦 Installing packages..."
+echo ""
+yarn install
+
+echo ""
+echo "⚡️ Running Migrations..."
+echo ""
+bin/rake db:migrate db:test:prepare
+
+echo ""
+echo "✨ Done!"
+echo ""
