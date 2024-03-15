@@ -8,6 +8,9 @@
       },
       "golint": {
         "excludes": "**/*_test.go"
+      },
+      "govet": {
+        "excludes": "**/*_test.go"
       }
   },
   "delay": 1.0
