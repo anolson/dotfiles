@@ -41,7 +41,7 @@
 		"rtc",
 		"util"
 	],
-	"index_files": false,
+	"index_files": true,
 	"index_ignored_patterns":
 	[
 		"*.tar.gz"
