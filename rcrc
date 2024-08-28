@@ -1,1 +1,1 @@
-EXCLUDES="README.md Brewfile Brewfile.lock.json sublime"
+EXCLUDES="README.md Brewfile* sublime"
