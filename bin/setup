@@ -5,7 +5,7 @@
 if test ! $(which brew)
 then
   echo "Installing Homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew tap Homebrew/bundle
 else
   echo "Homebrew located."
@@ -15,6 +15,17 @@ echo "Updating Homebrew..."
 brew update
 
 echo "Installing Homebrew Packages..."
-brew bundle
 
-rcup
+brew install git
+brew install go
+brew install openssl
+brew install rbenv
+brew install the_silver_searcher
+brew install rcm
+brew install yarn
+brew install zsh
+
+brew install --cask gitx
+brew install --cask font-source-code-pro
+
+rcup -x "README.md Brewfile* sublime"

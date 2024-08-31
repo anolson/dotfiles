@@ -34,7 +34,7 @@ First, install [Package Control](https://packagecontrol.io/installation).
 ```sh
 $ ./sublime/setup
 ```
-Sublime Text packages are are configured in [Package Control.sublime-settings](sublime/Packages/User/Package%20Control.sublime-settings). After `sublime/setup` runs, Package Control will detect the changes and automatically install all the packages.
+Sublime Text packages are configured in [Package Control.sublime-settings](sublime/Packages/User/Package%20Control.sublime-settings). After `sublime/setup` runs, Package Control will detect the changes and automatically install all the packages.
 
 ## Misc
 
@@ -46,6 +46,14 @@ https://github.com/nvm-sh/nvm#install--update-script
 ```
 $ touch ~/.nvm
 $ source ~/.zshrc
+```
+
+#### Install homebrew packages
+
+The setup script installs a minimal set of packages, install additional packages with:
+
+```
+$ brew bundle
 ```
 
 #### Terminal.app keyboard config
