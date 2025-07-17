@@ -21,8 +21,9 @@ alias gvb="go build -v ./..."
 alias gt="go test ./..."
 alias gvt="go test -v ./..."
 
-# Sublime
+# Editors
 alias s="subl ."
+alias c="cursor ."
 
 # Airport
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
