@@ -6,8 +6,6 @@
   ll = "log --oneline --numstat"
 [branch]
   autosetuprebase = always
-[include]
-  path = .gitconfig.local
 [commit]
   template = ~/.gitmessage
 [push]
@@ -20,3 +18,5 @@
   autosquash = true
 [fetch]
   prune = true
+[include]
+  path = .gitconfig.local
